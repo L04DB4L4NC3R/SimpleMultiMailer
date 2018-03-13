@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mailer</title>
+</head>
+<center><body style="background-color:LightGreen">
+    <h1>Welcome</h1>
+    <form action="/" method="post" enctype = "multipart/form-data">
+        <input type="text" name="user" id="email" placeholder="Enter your email" required><br><br>
+        <input type="password" name="pass" id="password" placeholder="Enter your password" required><br><br>
+        <input type="text" name="subject" id="sub" placeholder="Subject"><br><br>
+        <textarea name="text" id="txt" cols="30" rows="10" placeholder="Enter text here"></textarea><br><br>
+        <label for="file-upload" class="custom-file-upload">
+            Upload CSV
+        </label>
+        <input type="file" name="file" id="file-upload" value="Drop csv recipient file" accept=".csv"><br><br>
+        OR <br><br>
+        <input type="text" name="to" id="to" placeholder="Who to mail to?"><br><br>
+        <button>Submit</button><br><br>
+    </form>
+</body></center>
+</html>
